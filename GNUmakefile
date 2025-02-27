@@ -22,6 +22,7 @@ dist:
 # triggers cleanup by executing a non existent test
 cleanup:
 	cd vcd && go test -tags ALL -run "NoSuchTest\b"  -v -timeout 0
+	
 
 # builds and deploys the plugin
 install: build
